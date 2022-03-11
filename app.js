@@ -35,6 +35,10 @@ function total(){
     const mPrice = memoryPrice.innerText.substring(1);
     const sPrice = storagePrice.innerText.substring(1);
     const dPrice = deliveryPrice.innerText.substring(1);
-    const updateTotal = (parseInt(price)+parseInt(mPrice)+parseInt(sPrice)+parseInt(dPrice))
-    return totalOne.innerText = `$${updateTotal}`;
+    const updateTotal = (parseInt(price)+parseInt(mPrice)+parseInt(sPrice)+parseInt(dPrice));
+
+    const t2 = totalTwo.innerText = `Total : $${updateTotal}`
+    const t1 = totalOne.innerText = `$${updateTotal}`;
+
+    return (t1,t2)
 }
