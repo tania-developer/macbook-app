@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@200&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -13,44 +14,62 @@
             <img src="./images/mac.png" alt="">
         </div>
         <div class="content-div">
-            <h2>Customize your Blue 24-inch iMac with Apple M1 chip.</h2>
-            <p>Apple M1 chip with 8-core CPU with 4 perfomance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard US English</p>
+            <h1>Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+            <p class="details">Apple M1 chip with 8-core CPU with 4 perfomance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard US English</p>
             
             <div>
-                <p>Memory</p>
-                <button class="btn">8GB unified memory</button>
-                <button class="btn">16GB unified memory</button>
+                <p class="title">Memory</p>
+                <button class="btn" id="memory-zero">8GB unified memory</button>
+                <button class="btn" id="memory-one">16GB unified memory</button>
             </div>
 
             <div>
-                <p>Storage</p>
-                <button class="btn">256GB SSD storage</button>
-                <button class="btn">512GB SSD storage</button>
-                <button class="btn">1TB SSD storage</button>
+                <p class="title">Storage</p>
+                <button class="btn" id="storage-zero">256GB SSD storage</button>
+                <button class="btn" id="storage-one">512GB SSD storage</button>
+                <button class="btn" id="storage-two">1TB SSD storage</button>
             </div>
 
             <div>
-                <p>Choose your delivery option</p>
-                <button class="btn">Friday, Aug 25 FREE Prime Delivery</button>
-                <button class="btn">Friday, Aug 21 Delivery charge $20</button>
+                <p class="title">Choose your delivery option</p>
+                <button class="btn" id="delivery-zero">Friday, Aug 25 FREE Prime Delivery</button>
+                <button class="btn" id="delivery-one">Friday, Aug 21 Delivery charge $20</button>
             </div>
 
-            <div>
-                <p>Best Price $1299</p>
-                <p>Extra Memory Cost $0</p>
-                <p>Extra Storage Cost $0</p>
-                <p>Delivery charge $0</p>
-                <p>Total Price $1299</p>
-            </div>
-
+            <table id="invoice">
+                <tr>
+                  <td>Best Price</td>
+                  <td id="best-price"> $1299</td>
+                </tr>
+                <tr>
+                  <td>Extra Memory Cost</td>
+                  <td id="memory-price"> $0</td>
+                </tr>
+                <tr>
+                  <td>Extra Storage Cost</td>
+                  <td id="storage-price">$0</td>
+                </tr>
+                <tr>
+                  <td>Delivery Charge</td>
+                  <td id="delivery-price"> $0</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="total-one">$0</td>
+                  </tr>
+            </table>
             <div class="pomo-code">
                 <p>Add Pomo code</p>
                 <input type="text">
             </div>
-            <hr>
-            <h3>Total: $974.25</h3>
+            
         </div>   
     </div>
+
+    <section>
+        <hr>
+        <h3 id="total-two">Total: $974.25</h3>
+    </section>
     <script src="./app.js"></script>
 </body>
 </html>
